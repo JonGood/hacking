@@ -20,6 +20,15 @@ sudo searchsploit --update
 echo " "
 echo " "
 
+# Install/update seclists (wordlists for passwords, directories, etc.).
+echo "Removing old version of seclists..."
+sudo rm -r /usr/share/wordlists/seclists/
+echo "Updating seclists..."
+sudo apt-get install seclists
+sudo mv /usr/share/seclists /usr/share/wordlists/
+echo " "
+echo " "
+
 
 # ::REMOTE Executed Tools (On Kali / Attacker)::
 # AUTORECON: Remove old instance and download fresh.
