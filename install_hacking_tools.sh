@@ -13,19 +13,25 @@ echo "Installing Terminator..."
 sudo apt-get install terminator
 echo " "
 echo " "
+echo "Terminator is now installed."
+echo " "
+echo " "
 
 # Update local exploits from exploit-db.
 echo "Updating searchsploit exploits..."
 sudo searchsploit --update
 echo " "
 echo " "
+echo "Searchsploit has been updated."
+echo " "
+echo " "
 
 # Install/update seclists (wordlists for passwords, directories, etc.).
-echo "Removing old version of seclists..."
-sudo rm -r /usr/share/wordlists/seclists/
-echo "Updating seclists..."
+echo "Installing or updating seclists..."
 sudo apt-get install seclists
-sudo mv /usr/share/seclists /usr/share/wordlists/
+echo " "
+echo " "
+echo "Seclists is now installed at /usr/share/seclists"
 echo " "
 echo " "
 
@@ -36,6 +42,9 @@ echo "Removing old version of AutoRecon..."
 sudo rm -r /opt/remote/AutoRecon
 echo "Downloading AutoRecon..."
 sudo git clone https://github.com/Tib3rius/AutoRecon.git /opt/remote/AutoRecon
+echo " "
+echo " "
+echo "AutoRecon is now installed in /opt/remote/AutoRecon"
 echo " "
 echo " "
 
