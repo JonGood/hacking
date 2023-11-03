@@ -35,7 +35,6 @@ echo "Seclists is now installed at /usr/share/seclists"
 echo " "
 echo " "
 
-
 # ::REMOTE Executed Tools (On Kali / Attacker)::
 # AUTORECON: Remove old instance and download fresh.
 echo "Removing old version of AutoRecon..."
@@ -48,7 +47,6 @@ echo "AutoRecon is now installed in /opt/remote/AutoRecon"
 echo " "
 echo " "
 
-
 # ::LOCAL Executed Tools (On Victim)::
 # PEASS (WinPEAS / LinPEAS): Remove old instance and download fresh instances of enumeration scripts.
 echo "Removing old version of PEASS-ng"
@@ -57,4 +55,3 @@ echo "Downloading PEASS-ng..."
 sudo git clone https://github.com/carlospolop/PEASS-ng.git /opt/local/PEASS-ng
 echo " "
 echo " "
-
